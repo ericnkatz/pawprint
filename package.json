@@ -1,0 +1,23 @@
+{
+  "name": "pawprint",
+  "version": "0.0.1",
+  "description": "ui toolkit",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs", 
+  "author": "Eric Nikolay Katz <ekatz@orisintel.com> (http://ericnkatz.com/)",
+  "license": "MIT",
+  "scripts": {
+    "build": "microbundle  --jsx react  -f es,cjs",
+    "dev": "microbundle watch  --jsx react  -f es,cjs"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0",
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  }
+}
